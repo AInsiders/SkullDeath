@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - SkullDeath</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">SKULL<span class="logo-accent">DEATH</span></span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link active">Shop</a>
+                <a href="drops.html" class="nav-link">Drops</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shop Header -->
+    <section class="shop-header">
+        <div class="container">
+            <h1 class="page-title">Shop Collection</h1>
+            <p class="page-subtitle">Elite streetwear for the fearless</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="category-filter">Category</label>
+                    <select id="category-filter" class="filter-select">
+                        <option value="all">All Items</option>
+                        <option value="hoodies">Hoodies</option>
+                        <option value="sweatshirts">Sweatshirts</option>
+                        <option value="limited">Limited Edition</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="size-filter">Size</label>
+                    <select id="size-filter" class="filter-select">
+                        <option value="all">All Sizes</option>
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-filter">Price</label>
+                    <select id="price-filter" class="filter-select">
+                        <option value="all">All Prices</option>
+                        <option value="0-50">$0 - $50</option>
+                        <option value="50-100">$50 - $100</option>
+                        <option value="100+">$100+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <button id="clear-filters" class="btn-outline">Clear Filters</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products">
+        <div class="container">
+            <div class="products-grid" id="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="hoodies" data-size="s,m,l,xl" data-price="89.99">
+                    <div class="product-image">
+                        <img src="assets/products/hoodie-1.jpg" alt="Shadow Reaper Hoodie">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Shadow Reaper Hoodie</h3>
+                        <p class="product-description">Dark, mysterious design with premium comfort</p>
+                        <div class="product-price">$89.99</div>
+                        <div class="product-actions">
+                            <button class="btn-primary">Add to Cart</button>
+                            <button class="btn-secondary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="sweatshirts" data-size="xs,s,m,l,xl,xxl" data-price="79.99">
+                    <div class="product-image">
+                        <img src="assets/products/sweatshirt-1.jpg" alt="Blood Moon Sweatshirt">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                        <div class="product-badge">Limited</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Blood Moon Sweatshirt</h3>
+                        <p class="product-description">Bold statement piece with lunar inspiration</p>
+                        <div class="product-price">$79.99</div>
+                        <div class="product-actions">
+                            <button class="btn-primary">Add to Cart</button>
+                            <button class="btn-secondary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="hoodies" data-size="m,l,xl,xxl" data-price="94.99">
+                    <div class="product-image">
+                        <img src="assets/products/hoodie-2.jpg" alt="Death Grip Pullover">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                        <div class="product-badge">Exclusive</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Death Grip Pullover</h3>
+                        <p class="product-description">Premium pullover with aggressive styling</p>
+                        <div class="product-price">$94.99</div>
+                        <div class="product-actions">
+                            <button class="btn-primary">Add to Cart</button>
+                            <button class="btn-secondary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="sweatshirts" data-size="s,m,l,xl" data-price="69.99">
+                    <div class="product-image">
+                        <img src="assets/products/sweatshirt-2.jpg" alt="Skull Crusher Sweatshirt">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Skull Crusher Sweatshirt</h3>
+                        <p class="product-description">Classic skull design with modern fit</p>
+                        <div class="product-price">$69.99</div>
+                        <div class="product-actions">
+                            <button class="btn-primary">Add to Cart</button>
+                            <button class="btn-secondary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="limited" data-size="m,l" data-price="129.99">
+                    <div class="product-image">
+                        <img src="assets/products/hoodie-3.jpg" alt="Phantom Elite Hoodie">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                        <div class="product-badge">Limited</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Phantom Elite Hoodie</h3>
+                        <p class="product-description">Limited edition with premium materials</p>
+                        <div class="product-price">$129.99</div>
+                        <div class="product-actions">
+                            <button class="btn-primary">Add to Cart</button>
+                            <button class="btn-secondary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="hoodies" data-size="xs,s,m,l,xl,xxl" data-price="84.99">
+                    <div class="product-image">
+                        <img src="assets/products/hoodie-4.jpg" alt="Night Stalker Hoodie">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Night Stalker Hoodie</h3>
+                        <p class="product-description">Stealth design for the urban warrior</p>
+                        <div class="product-price">$84.99</div>
+                        <div class="product-actions">
+                            <button class="btn-primary">Add to Cart</button>
+                            <button class="btn-secondary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" data-category="sweatshirts" data-size="s,m,l,xl" data-price="74.99">
+                    <div class="product-image">
+                        <img src="assets/products/sweatshirt-3.jpg" alt="Raven's Call Sweatshirt">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Raven's Call Sweatshirt</h3>
+                        <p class="product-description">Mystical raven design with dark elegance</p>
+                        <div class="product-price">$74.99</div>
+                        <div class="product-actions">
+                            <button class="btn-primary">Add to Cart</button>
+                            <button class="btn-secondary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" data-category="limited" data-size="l,xl,xxl" data-price="149.99">
+                    <div class="product-image">
+                        <img src="assets/products/hoodie-5.jpg" alt="Demon Lord Hoodie">
+                        <div class="product-overlay">
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                        <div class="product-badge">Exclusive</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Demon Lord Hoodie</h3>
+                        <p class="product-description">Ultimate exclusive with demonic design</p>
+                        <div class="product-price">$149.99</div>
+                        <div class="product-actions">
+                            <button class="btn-primary">Add to Cart</button>
+                            <button class="btn-secondary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick View Modal -->
+    <div id="quick-view-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="product-gallery">
+                    <img src="" alt="" id="modal-product-image">
+                </div>
+                <div class="product-details">
+                    <h2 id="modal-product-title"></h2>
+                    <p id="modal-product-description"></p>
+                    <div class="product-price" id="modal-product-price"></div>
+                    <div class="size-selector">
+                        <label>Size:</label>
+                        <div class="size-options">
+                            <button class="size-btn" data-size="xs">XS</button>
+                            <button class="size-btn" data-size="s">S</button>
+                            <button class="size-btn" data-size="m">M</button>
+                            <button class="size-btn" data-size="l">L</button>
+                            <button class="size-btn" data-size="xl">XL</button>
+                            <button class="size-btn" data-size="xxl">XXL</button>
+                        </div>
+                    </div>
+                    <div class="quantity-selector">
+                        <label>Quantity:</label>
+                        <div class="quantity-controls">
+                            <button class="qty-btn" data-action="decrease">-</button>
+                            <input type="number" value="1" min="1" max="10" id="quantity-input">
+                            <button class="qty-btn" data-action="increase">+</button>
+                        </div>
+                    </div>
+                    <button class="btn-primary modal-add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">SKULL<span class="logo-accent">DEATH</span></h3>
+                    <p>Built for the fearless. Designed for the elite.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="drops.html">Drops</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SkullDeath. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html> 

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SkullDeath</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">SKULL<span class="logo-accent">DEATH</span></span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="drops.html" class="nav-link">Drops</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="contact-header">
+        <div class="container">
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="page-subtitle">We're here to help the fearless</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="contact-title">Let's Connect</h2>
+                    <p class="contact-description">
+                        Have a question about our products, need support, or want to collaborate? 
+                        We'd love to hear from you. Our team is here to help the fearless community.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-details">
+                                <h3>Email</h3>
+                                <p>hello@skulldeath.com</p>
+                                <span class="response-time">Response within 24 hours</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">📱</div>
+                            <div class="method-details">
+                                <h3>Phone</h3>
+                                <p>+1 (555) 123-4567</p>
+                                <span class="response-time">Mon-Fri, 9AM-6PM PST</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">💬</div>
+                            <div class="method-details">
+                                <h3>Live Chat</h3>
+                                <p>Available 24/7</p>
+                                <span class="response-time">Instant response</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-contact">
+                        <h3>Follow the Elite</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">Instagram</a>
+                            <a href="#" class="social-icon">Twitter</a>
+                            <a href="#" class="social-icon">TikTok</a>
+                            <a href="#" class="social-icon">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <h2 class="form-title">Send us a Message</h2>
+                        
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject">
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Customer Support</option>
+                                <option value="order">Order Status</option>
+                                <option value="returns">Returns & Exchanges</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="wholesale">Wholesale</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our newsletter for exclusive drops and updates</label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I track my order?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Once your order ships, you'll receive a tracking number via email. You can also track your order by logging into your account and visiting the order history section.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's your return policy?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day return policy for all unworn items with original tags attached. Returns are free for US customers. International returns are subject to shipping costs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>When do new drops happen?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>New drops happen every month, usually on the first Friday. Limited edition drops are announced on our social media channels and through our newsletter.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you ship internationally?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we ship to over 100 countries worldwide. International shipping typically takes 7-14 business days. All customs duties are the responsibility of the customer.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I join the elite community?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Join our newsletter and follow us on social media to stay connected with the SkullDeath community. You'll get early access to drops and exclusive content.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are your products sustainable?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're committed to sustainability and use eco-friendly materials where possible. All our packaging is recyclable, and we're working towards becoming carbon neutral.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-info">
+                    <h2 class="location-title">Visit Our HQ</h2>
+                    <p class="location-description">
+                        Located in the heart of downtown Los Angeles, our headquarters embodies the raw energy 
+                        and fearless spirit of the SkullDeath brand.
+                    </p>
+                    
+                    <div class="address-details">
+                        <div class="address-item">
+                            <strong>Address:</strong>
+                            <p>123 Skull Street<br>Los Angeles, CA 90012<br>United States</p>
+                        </div>
+                        
+                        <div class="address-item">
+                            <strong>Hours:</strong>
+                            <p>Monday - Friday: 9AM - 6PM PST<br>Saturday: 10AM - 4PM PST<br>Sunday: Closed</p>
+                        </div>
+                        
+                        <div class="address-item">
+                            <strong>Parking:</strong>
+                            <p>Street parking available<br>Public garage on 2nd & Main</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="btn-outline">Get Directions</a>
+                </div>
+                
+                <div class="location-map">
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <h3>Interactive Map</h3>
+                            <p>Map integration would go here</p>
+                            <div class="map-coordinates">
+                                <span>34.0522° N, 118.2437° W</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support-section">
+        <div class="container">
+            <h2 class="section-title">Need Immediate Help?</h2>
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">🛒</div>
+                    <h3>Order Support</h3>
+                    <p>Track orders, check status, or request changes to your purchase.</p>
+                    <a href="#" class="support-link">Get Order Help</a>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">📦</div>
+                    <h3>Shipping & Returns</h3>
+                    <p>Information about shipping times, costs, and our return process.</p>
+                    <a href="#" class="support-link">Shipping Info</a>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">👕</div>
+                    <h3>Size Guide</h3>
+                    <p>Find your perfect fit with our detailed sizing charts and recommendations.</p>
+                    <a href="#" class="support-link">View Size Guide</a>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">💳</div>
+                    <h3>Payment & Security</h3>
+                    <p>Learn about our secure payment methods and data protection.</p>
+                    <a href="#" class="support-link">Payment Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">SKULL<span class="logo-accent">DEATH</span></h3>
+                    <p>Built for the fearless. Designed for the elite.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="drops.html">Drops</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SkullDeath. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html> 

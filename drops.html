@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drops - SkullDeath</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/drops.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">SKULL<span class="logo-accent">DEATH</span></span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="drops.html" class="nav-link active">Drops</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Drops Header -->
+    <section class="drops-header">
+        <div class="container">
+            <h1 class="page-title">Limited Drops</h1>
+            <p class="page-subtitle">Exclusive releases for the elite</p>
+        </div>
+    </section>
+
+    <!-- Live Drop Banner -->
+    <section class="live-drop-banner">
+        <div class="container">
+            <div class="live-drop-content">
+                <div class="live-indicator">
+                    <span class="pulse"></span>
+                    <span class="live-text">LIVE NOW</span>
+                </div>
+                <h2 class="live-drop-title">Demon Lord Collection</h2>
+                <p class="live-drop-description">The ultimate exclusive drop. Only 100 pieces worldwide.</p>
+                <div class="countdown-timer" id="countdown-timer">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+                <a href="#live-drop" class="btn-primary">Shop Live Drop</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Drop Products -->
+    <section id="live-drop" class="live-drop-products">
+        <div class="container">
+            <h2 class="section-title">Live Drop Collection</h2>
+            <div class="live-drop-grid">
+                <div class="live-drop-card featured">
+                    <div class="drop-image">
+                        <img src="assets/drops/demon-lord-hoodie.jpg" alt="Demon Lord Hoodie">
+                        <div class="drop-overlay">
+                            <div class="drop-status live">LIVE</div>
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                        <div class="drop-badge exclusive">Exclusive</div>
+                    </div>
+                    <div class="drop-info">
+                        <h3 class="drop-title">Demon Lord Hoodie</h3>
+                        <p class="drop-description">The most exclusive piece in our collection. Limited to 50 pieces.</p>
+                        <div class="drop-details">
+                            <div class="drop-price">$199.99</div>
+                            <div class="drop-stock">47/50 Remaining</div>
+                        </div>
+                        <div class="drop-actions">
+                            <button class="btn-primary">Add to Cart</button>
+                            <button class="btn-secondary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="live-drop-card">
+                    <div class="drop-image">
+                        <img src="assets/drops/demon-lord-sweatshirt.jpg" alt="Demon Lord Sweatshirt">
+                        <div class="drop-overlay">
+                            <div class="drop-status live">LIVE</div>
+                            <button class="quick-view-btn">Quick View</button>
+                        </div>
+                        <div class="drop-badge limited">Limited</div>
+                    </div>
+                    <div class="drop-info">
+                        <h3 class="drop-title">Demon Lord Sweatshirt</h3>
+                        <p class="drop-description">Matching sweatshirt with demonic design elements.</p>
+                        <div class="drop-details">
+                            <div class="drop-price">$179.99</div>
+                            <div class="drop-stock">23/50 Remaining</div>
+                        </div>
+                        <div class="drop-actions">
+                            <button class="btn-primary">Add to Cart</button>
+                            <button class="btn-secondary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Drops -->
+    <section class="upcoming-drops">
+        <div class="container">
+            <h2 class="section-title">Upcoming Drops</h2>
+            <div class="upcoming-grid">
+                <div class="upcoming-card">
+                    <div class="upcoming-image">
+                        <img src="assets/drops/phantom-elite.jpg" alt="Phantom Elite Drop">
+                        <div class="upcoming-overlay">
+                            <div class="upcoming-status">Coming Soon</div>
+                        </div>
+                        <div class="upcoming-badge">Next</div>
+                    </div>
+                    <div class="upcoming-info">
+                        <h3 class="upcoming-title">Phantom Elite Collection</h3>
+                        <p class="upcoming-description">Stealth-inspired collection with premium materials.</p>
+                        <div class="upcoming-date">December 15, 2024</div>
+                        <div class="upcoming-countdown" data-date="2024-12-15T00:00:00">
+                            <div class="countdown-item">
+                                <span class="countdown-number">15</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number">08</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                        </div>
+                        <button class="btn-outline">Notify Me</button>
+                    </div>
+                </div>
+
+                <div class="upcoming-card">
+                    <div class="upcoming-image">
+                        <img src="assets/drops/blood-moon.jpg" alt="Blood Moon Drop">
+                        <div class="upcoming-overlay">
+                            <div class="upcoming-status">Coming Soon</div>
+                        </div>
+                    </div>
+                    <div class="upcoming-info">
+                        <h3 class="upcoming-title">Blood Moon Collection</h3>
+                        <p class="upcoming-description">Lunar-inspired designs with mystical elements.</p>
+                        <div class="upcoming-date">January 5, 2025</div>
+                        <div class="upcoming-countdown" data-date="2025-01-05T00:00:00">
+                            <div class="countdown-item">
+                                <span class="countdown-number">36</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number">12</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                        </div>
+                        <button class="btn-outline">Notify Me</button>
+                    </div>
+                </div>
+
+                <div class="upcoming-card">
+                    <div class="upcoming-image">
+                        <img src="assets/drops/shadow-reaper.jpg" alt="Shadow Reaper Drop">
+                        <div class="upcoming-overlay">
+                            <div class="upcoming-status">Coming Soon</div>
+                        </div>
+                    </div>
+                    <div class="upcoming-info">
+                        <h3 class="upcoming-title">Shadow Reaper Collection</h3>
+                        <p class="upcoming-description">Dark and mysterious designs for the fearless.</p>
+                        <div class="upcoming-date">January 20, 2025</div>
+                        <div class="upcoming-countdown" data-date="2025-01-20T00:00:00">
+                            <div class="countdown-item">
+                                <span class="countdown-number">51</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number">06</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                        </div>
+                        <button class="btn-outline">Notify Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Drops -->
+    <section class="past-drops">
+        <div class="container">
+            <h2 class="section-title">Past Drops</h2>
+            <div class="past-drops-grid">
+                <div class="past-drop-card sold-out">
+                    <div class="past-drop-image">
+                        <img src="assets/drops/night-stalker.jpg" alt="Night Stalker Drop">
+                        <div class="past-drop-overlay">
+                            <div class="past-drop-status">Sold Out</div>
+                        </div>
+                    </div>
+                    <div class="past-drop-info">
+                        <h3 class="past-drop-title">Night Stalker Collection</h3>
+                        <p class="past-drop-description">Stealth-inspired urban warrior collection.</p>
+                        <div class="past-drop-date">Released: November 1, 2024</div>
+                        <div class="past-drop-status-text">Sold Out in 2 hours</div>
+                    </div>
+                </div>
+
+                <div class="past-drop-card sold-out">
+                    <div class="past-drop-image">
+                        <img src="assets/drops/raven-call.jpg" alt="Raven's Call Drop">
+                        <div class="past-drop-overlay">
+                            <div class="past-drop-status">Sold Out</div>
+                        </div>
+                    </div>
+                    <div class="past-drop-info">
+                        <h3 class="past-drop-title">Raven's Call Collection</h3>
+                        <p class="past-drop-description">Mystical raven-inspired designs.</p>
+                        <div class="past-drop-date">Released: October 15, 2024</div>
+                        <div class="past-drop-status-text">Sold Out in 45 minutes</div>
+                    </div>
+                </div>
+
+                <div class="past-drop-card sold-out">
+                    <div class="past-drop-image">
+                        <img src="assets/drops/skull-crusher.jpg" alt="Skull Crusher Drop">
+                        <div class="past-drop-overlay">
+                            <div class="past-drop-status">Sold Out</div>
+                        </div>
+                    </div>
+                    <div class="past-drop-info">
+                        <h3 class="past-drop-title">Skull Crusher Collection</h3>
+                        <p class="past-drop-description">Classic skull designs with modern edge.</p>
+                        <div class="past-drop-date">Released: September 30, 2024</div>
+                        <div class="past-drop-status-text">Sold Out in 1 hour</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drop Notifications -->
+    <section class="drop-notifications">
+        <div class="container">
+            <div class="notification-content">
+                <h2 class="notification-title">Never Miss a Drop</h2>
+                <p class="notification-description">Get notified when new exclusive drops go live.</p>
+                <form class="notification-form" id="notification-form">
+                    <div class="form-group">
+                        <input type="email" id="notification-email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">SKULL<span class="logo-accent">DEATH</span></h3>
+                    <p>Built for the fearless. Designed for the elite.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="drops.html">Drops</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SkullDeath. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/drops.js"></script>
+</body>
+</html> 
