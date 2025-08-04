@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkullDeath - Built for the Fearless</title>
+    <meta name="description" content="Elite streetwear for those who dare to dominate. Premium hoodies, sweatshirts, and limited edition drops.">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <!-- Preload critical images -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=800&fit=crop&crop=center">
 </head>
 <body>
     <!-- Navigation -->
@@ -38,9 +41,10 @@
     <section class="hero">
         <div class="hero-background">
             <div class="hero-overlay"></div>
-            <video autoplay muted loop class="hero-video">
-                <source src="assets/hero-video.mp4" type="video/mp4">
-            </video>
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&h=800&fit=crop&crop=center" 
+                 alt="SkullDeath Hero" 
+                 class="hero-image"
+                 loading="eager">
         </div>
         <div class="hero-content">
             <h1 class="hero-title">
@@ -65,7 +69,9 @@
             <div class="category-grid">
                 <div class="category-card" data-category="hoodies">
                     <div class="category-image">
-                        <img src="assets/categories/hoodies.jpg" alt="Hoodies">
+                        <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400&h=500&fit=crop&crop=center" 
+                             alt="Hoodies Collection" 
+                             loading="lazy">
                         <div class="category-overlay">
                             <h3>Hoodies</h3>
                             <p>Ultimate comfort meets street edge</p>
@@ -74,7 +80,9 @@
                 </div>
                 <div class="category-card" data-category="sweatshirts">
                     <div class="category-image">
-                        <img src="assets/categories/sweatshirts.jpg" alt="Sweatshirts">
+                        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=400&h=500&fit=crop&crop=center" 
+                             alt="Sweatshirts Collection" 
+                             loading="lazy">
                         <div class="category-overlay">
                             <h3>Sweatshirts</h3>
                             <p>Bold statements in premium cotton</p>
@@ -83,7 +91,9 @@
                 </div>
                 <div class="category-card" data-category="limited">
                     <div class="category-image">
-                        <img src="assets/categories/limited.jpg" alt="Limited Edition">
+                        <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=400&h=500&fit=crop&crop=center" 
+                             alt="Limited Edition Collection" 
+                             loading="lazy">
                         <div class="category-overlay">
                             <h3>Limited Edition</h3>
                             <p>Exclusive drops for the elite</p>
@@ -104,7 +114,9 @@
             <div class="drops-grid">
                 <div class="drop-card">
                     <div class="drop-image">
-                        <img src="assets/drops/drop-1.jpg" alt="SkullDeath Drop 1">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=300&fit=crop&crop=center" 
+                             alt="Shadow Reaper Hoodie" 
+                             loading="lazy">
                         <div class="drop-badge">New</div>
                     </div>
                     <div class="drop-info">
@@ -114,7 +126,9 @@
                 </div>
                 <div class="drop-card">
                     <div class="drop-image">
-                        <img src="assets/drops/drop-2.jpg" alt="SkullDeath Drop 2">
+                        <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=400&h=300&fit=crop&crop=center" 
+                             alt="Blood Moon Sweatshirt" 
+                             loading="lazy">
                         <div class="drop-badge">Limited</div>
                     </div>
                     <div class="drop-info">
@@ -124,7 +138,9 @@
                 </div>
                 <div class="drop-card">
                     <div class="drop-image">
-                        <img src="assets/drops/drop-3.jpg" alt="SkullDeath Drop 3">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=300&fit=crop&crop=center" 
+                             alt="Death Grip Pullover" 
+                             loading="lazy">
                         <div class="drop-badge">Exclusive</div>
                     </div>
                     <div class="drop-info">
