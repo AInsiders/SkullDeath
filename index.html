@@ -997,5 +997,51 @@
     </footer>
 
     <script src="js/main.js"></script>
+    
+    <!-- Mobile Navigation Debug Script -->
+    <script>
+        // Ensure mobile navigation works even if main.js fails to load
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Index page loaded - checking mobile navigation...');
+            
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (navToggle && navMenu) {
+                console.log('Mobile navigation elements found');
+                
+                navToggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    console.log('Burger menu clicked');
+                    
+                    navMenu.classList.toggle('active');
+                    navToggle.classList.toggle('active');
+                    
+                    console.log('Menu active:', navMenu.classList.contains('active'));
+                });
+
+                // Close menu when clicking on a link
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navMenu.classList.remove('active');
+                        navToggle.classList.remove('active');
+                        console.log('Menu closed by link click');
+                    });
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                        navMenu.classList.remove('active');
+                        navToggle.classList.remove('active');
+                    }
+                });
+            } else {
+                console.error('Mobile navigation elements not found');
+            }
+        });
+    </script>
 </body>
 </html> 
