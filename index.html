@@ -300,16 +300,16 @@
 
         .category-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 30px;
         }
 
         .category-card {
-            position: relative;
-            overflow: hidden;
+            background: var(--color-gray);
             border-radius: 10px;
+            overflow: hidden;
             transition: var(--transition);
-            cursor: pointer;
+            position: relative;
             opacity: 0;
             transform: translateY(30px);
         }
@@ -320,8 +320,8 @@
         }
 
         .category-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(255, 0, 0, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(255, 0, 0, 0.2);
         }
 
         .category-image {
@@ -338,7 +338,7 @@
         }
 
         .category-card:hover .category-image img {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
         .category-overlay {
@@ -347,7 +347,7 @@
             left: 0;
             right: 0;
             background: linear-gradient(transparent, rgba(0,0,0,0.8));
-            padding: 30px;
+            padding: 40px 20px 20px;
             transform: translateY(100%);
             transition: var(--transition);
         }
@@ -359,7 +359,7 @@
         .category-overlay h3 {
             font-size: 1.5rem;
             margin-bottom: 10px;
-            color: var(--color-red);
+            color: var(--color-white);
         }
 
         /* Latest Drops */
@@ -372,15 +372,15 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
         }
 
         .view-all {
             color: var(--color-red);
             text-decoration: none;
+            text-transform: uppercase;
             font-family: var(--font-primary);
             font-weight: 600;
-            text-transform: uppercase;
             letter-spacing: 1px;
             transition: var(--transition);
         }
@@ -621,7 +621,6 @@
                 font-size: 2rem;
             }
 
-            .category-grid,
             .drops-grid {
                 grid-template-columns: 1fr;
             }
