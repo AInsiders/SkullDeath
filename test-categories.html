@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories Test</title>
+    <style>
+        :root {
+            --color-black: #000000;
+            --color-dark: #0a0a0a;
+            --color-gray: #1a1a1a;
+            --color-red: #ff0000;
+            --color-white: #ffffff;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            background-color: var(--color-black);
+            color: var(--color-white);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            color: var(--color-white);
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .category-card {
+            background: var(--color-gray);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: var(--transition);
+            position: relative;
+            opacity: 1;
+            transform: translateY(0);
+            border: 2px solid var(--color-red);
+        }
+
+        .category-image {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .category-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .category-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 40px 20px 20px;
+            transform: translateY(0);
+        }
+
+        .category-overlay h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--color-white);
+        }
+
+        .category-overlay p {
+            color: var(--color-white);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="section-title">Categories Test</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=400&h=500&fit=crop&crop=center" 
+                         alt="Hoodies Collection">
+                    <div class="category-overlay">
+                        <h3>Hoodies</h3>
+                        <p>Ultimate comfort meets street edge</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=400&h=500&fit=crop&crop=center" 
+                         alt="Sweatshirts Collection">
+                    <div class="category-overlay">
+                        <h3>Sweatshirts</h3>
+                        <p>Bold statements in premium cotton</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category-card">
+                <div class="category-image">
+                    <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=400&h=500&fit=crop&crop=center" 
+                         alt="Limited Edition Collection">
+                    <div class="category-overlay">
+                        <h3>Limited Edition</h3>
+                        <p>Exclusive drops for the elite</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
